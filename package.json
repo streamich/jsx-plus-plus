@@ -57,6 +57,21 @@
     "bracketSpacing": false,
     "jsxBracketSameLine": false
   },
+  "jest": {
+    "transformIgnorePatterns": [],
+    "testRegex": ".*/__tests__/.*\\.(test|spec)\\.(jsx?)$",
+    "setupFiles": [
+      "./src/__tests__/setup.js"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "json"
+    ],
+    "reporters": [
+      "jest-tap-reporter"
+    ]
+  },
   "babel": {
     "presets": [
       "es2015",
