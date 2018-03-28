@@ -1,5 +1,1 @@
-
-
-const createHyperscript = (plugins, h = require('react').createElement) => {
-
-};
+const createHyperscript = (plugins, h = require('react').createElement) => {};

@@ -9,7 +9,9 @@
     "test": "jest",
     "test:coverage": "jest --coverage",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "prettier": "prettier --write '**/*.js'",
+    "precommit": "lint-staged"
   },
   "repository": {
     "type": "git",
@@ -19,23 +21,41 @@
     "classnames": "^2.2.5"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^3.3.15",
+    "@storybook/addon-links": "^3.3.15",
+    "@storybook/addons": "^3.3.15",
+    "@storybook/react": "^3.3.15",
     "babel-cli": "6.26.0",
+    "babel-core": "^6.26.0",
     "babel-polyfill": "6.26.0",
-    "babel-preset-stage-0": "6.24.1",
     "babel-preset-es2015": "6.24.1",
     "babel-preset-es2016": "6.24.1",
     "babel-preset-es2017": "6.24.1",
     "babel-preset-flow": "6.23.0",
+    "babel-preset-stage-0": "6.24.1",
     "jest": "^22.4.3",
     "jest-tap-reporter": "^1.9.0",
-    "rimraf": "^2.6.2",
+    "prettier": "1.11.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "@storybook/react": "^3.3.15",
-    "@storybook/addon-actions": "^3.3.15",
-    "@storybook/addon-links": "^3.3.15",
-    "@storybook/addons": "^3.3.15",
-    "babel-core": "^6.26.0"
+    "rimraf": "^2.6.2",
+    "lint-staged": "4.3.0"
+  },
+  "lint-staged": {
+    "**/*.js": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "prettier": {
+    "printWidth": 120,
+    "tabWidth": 4,
+    "useTabs": false,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "bracketSpacing": false,
+    "jsxBracketSameLine": false
   },
   "babel": {
     "presets": [
