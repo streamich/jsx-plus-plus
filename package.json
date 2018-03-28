@@ -7,7 +7,9 @@
     "clean": "rimraf lib",
     "build": "babel src --out-dir lib",
     "test": "jest",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -28,10 +30,21 @@
     "jest-tap-reporter": "^1.9.0",
     "rimraf": "^2.6.2",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "@storybook/react": "^3.3.15",
+    "@storybook/addon-actions": "^3.3.15",
+    "@storybook/addon-links": "^3.3.15",
+    "@storybook/addons": "^3.3.15",
+    "babel-core": "^6.26.0"
   },
   "babel": {
-    "presets": ["es2015", "es2016", "es2017", "stage-0", "flow"],
+    "presets": [
+      "es2015",
+      "es2016",
+      "es2017",
+      "stage-0",
+      "flow"
+    ],
     "comments": false
   },
   "keywords": [
