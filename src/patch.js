@@ -4,8 +4,10 @@ import applyPlugins from './index';
 import classnames from './plugins/classnames';
 import dom from './plugins/dom';
 import attr from './plugins/attr';
+import prefixer from './plugins/prefixer';
 
 const plugins = [
+    prefixer,
     classnames,
     dom,
     attr,
