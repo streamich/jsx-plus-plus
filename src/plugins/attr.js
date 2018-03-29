@@ -24,8 +24,8 @@ const plugin = (args) => {
             el.setAttribute(prop, $attr[prop]);
     };
 
-    props.$update = (el, props) => {
-        if ($update) $update(el, props);
+    props.$update = (el, props, oldProps) => {
+        if ($update) $update(el, props, oldProps);
 
         for (const prop in $attr)
             el.setAttribute(prop, $attr[prop]);

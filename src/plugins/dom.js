@@ -24,8 +24,8 @@ const plugin = (args) => {
             el[prop] = $dom[prop];
     };
 
-    props.$update = (el, props) => {
-        if ($update) $update(el, props);
+    props.$update = (el, props, oldProps) => {
+        if ($update) $update(el, props, oldProps);
 
         for (const prop in $dom)
             el[prop] = $dom[prop];
