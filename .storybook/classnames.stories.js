@@ -1,3 +1,4 @@
+import '../src/patch';
 import React from 'react';
 import {storiesOf} from '@storybook/react';
 import {action} from '@storybook/addon-actions';
@@ -17,3 +18,6 @@ const classNameRed = rule({
 
 storiesOf('classnames', module)
   .add('className', () => <div className={classNameRed}>test</div>)
+  .add('class', () => <div class={classNameRed}>test</div>)
+  .add('object', () => <div class={{[classNameRed]: true}}>test</div>)
+  .add('object, negative', () => <div class={{[classNameRed]: false}}>test</div>)

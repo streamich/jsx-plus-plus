@@ -1,5 +1,5 @@
 import React, {createElement} from 'react';
-import createHyperscript from './createHyperscript';
+import createHyperscript from './index';
 import classnames from './plugins/classnames';
 
 const plugins = [

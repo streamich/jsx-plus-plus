@@ -1,6 +1,6 @@
 import cx from 'classnames';
 
-const h = (args) => {
+const plugin = (args) => {
     const props = args[1];
 
     if (!props) return args;
