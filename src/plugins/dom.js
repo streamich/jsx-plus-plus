@@ -15,14 +15,20 @@ const plugin = (args) => {
         }
     }
 
-    const {$attach} = props;
+    const {$attach, $update} = props;
 
     props.$attach = (el, props) => {
         if ($attach) $attach(el, props);
 
-        for (const prop in $dom) {
+        for (const prop in $dom)
             el[prop] = $dom[prop];
-        }
+    };
+
+    props.$update = (el, props) => {
+        if ($update) $update(el, props);
+
+        for (const prop in $dom)
+            el[prop] = $dom[prop];
     };
 
     return args;
