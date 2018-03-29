@@ -15,7 +15,7 @@ const plugin = (args) => {
         }
     }
 
-    const {$attach, $update} = props;
+    const {$attach, $update, $detach} = props;
 
     props.$attach = (el, props) => {
         if ($attach) $attach(el, props);
@@ -29,6 +29,24 @@ const plugin = (args) => {
 
         for (const prop in $attr)
             el.setAttribute(prop, $attr[prop]);
+
+        const oldAtts = oldProps.$attr || {};
+
+        for (const prop in oldAttrs) {
+            if (!(prop in $attr)) {
+                el.removeAttribute(prop);
+            }
+        }
+    };
+
+    props.$detach = (el, oldProps) => {
+        if ($detach) $detach(el, oldProps);
+
+        const oldAttrs = oldProps.$attr || {};
+
+        for (const prop in oldAttrs) {
+            el.removeAttribute(prop);
+        }
     };
 
     return args;
