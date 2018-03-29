@@ -1,5 +1,5 @@
-import {createHyperscript} from 'react-micro-lifecycles/lib';
-import React, {createElement} from 'react';
+import createHyperscriptStable from 'react-micro-lifecycles/lib/createHyperscriptStable';
+import React from 'react';
 import applyPlugins from './index';
 import classnames from './plugins/classnames';
 import dom from './plugins/dom';
@@ -11,9 +11,9 @@ const plugins = [
     attr,
 ];
 
-var h = createElement;
+var h = React.createElement;
 
-h = createHyperscript(createElement);
+h = createHyperscriptStable(h, React.Component);
 h = applyPlugins(h, plugins);
 
 React.createElement = h;

@@ -4,6 +4,7 @@
   "description": "Better JSX for busy developers",
   "main": "lib/index.js",
   "scripts": {
+    "start": "npm run storybook",
     "clean": "rimraf lib",
     "build": "babel src --out-dir lib",
     "test": "jest",
@@ -19,7 +20,7 @@
   },
   "dependencies": {
     "classnames": "^2.2.5",
-    "react-micro-lifecycles": "^0.0.2"
+    "react-micro-lifecycles": "^1.0.0"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.3.15",
