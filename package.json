@@ -18,7 +18,8 @@
     "url": "https://github.com/streamich/jsx-plus-plus.git"
   },
   "dependencies": {
-    "classnames": "^2.2.5"
+    "classnames": "^2.2.5",
+    "react-micro-lifecycles": "^0.0.2"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.3.15",
