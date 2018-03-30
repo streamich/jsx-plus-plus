@@ -19,7 +19,7 @@
     "url": "https://github.com/streamich/jsx-plus-plus.git"
   },
   "dependencies": {
-    "nano-css": "^1.14.0",
+    "nano-css": "^1.15.0",
     "classnames": "^2.2.5",
     "react-micro-lifecycles": "^1.0.0"
   },

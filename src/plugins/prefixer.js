@@ -7,7 +7,6 @@ const plugin = (args) => {
 
     if (props && props.style) {
         props.style = prefixer.prefix(props.style);
-        console.log('2', props.style);
     }
 
     return args;
