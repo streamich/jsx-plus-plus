@@ -7,10 +7,11 @@ const plugin = (args) => {
 
     let className = props.className || props.class;
 
+    delete props.class;
+
     if (className) {
         className = cx(className);
         props.className = className;
-        props.class = className;
     }
 
     return args;

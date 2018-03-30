@@ -2,7 +2,7 @@
   "name": "jsx-plus-plus",
   "version": "0.1.0",
   "description": "Better JSX for busy developers",
-  "main": "lib/index.js",
+  "main": "lib/patch.js",
   "scripts": {
     "start": "npm run storybook",
     "clean": "rimraf lib",

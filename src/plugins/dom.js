@@ -7,6 +7,8 @@ const plugin = (args) => {
 
     if (!$dom) return args;
 
+    delete props.$dom;
+
     if (process.env.NODE_ENV !== 'production') {
         if (typeof $dom !== 'object') {
             console.error(

@@ -42,16 +42,18 @@ syntax.
 
 ```jsx
 <div class={[null, false, 'bar', undefined, 0, 1, { baz: null }, '']} />
+<div className={{a: true, b: false}}>
 ```
 
 Result:
 
 ```html
 <div class="bar 1">
+<div class="a">
 ```
 
 
-## Set DOM Element Props
+## DOM Element Props
 
 Sets props on native DOM elements.
 
@@ -66,7 +68,7 @@ Result:
 ```
 
 
-## Set DOM Element Attributes
+## DOM Element Attributes
 
 Sets attributes of DOM elements.
 
@@ -81,18 +83,18 @@ Result:
 ```
 
 
-## Add Native DOM Events
+## Native DOM Events
 
-Catch native DOM events.
+Add listeners to native DOM events.
 
 ```jsx
-<button $on={{click: () => console.log('CLICKED')}}>Click me!</button>
+<button $on={{click: (event) => console.log('CLICKED')}}>Click me!</button>
 ```
 
 
 ## Micro Life-cycles
 
-Add micro life-cycles for DOM elements.
+Add micro life-cycles to React DOM string elements.
 
 ```jsx
 <div
