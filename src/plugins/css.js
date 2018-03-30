@@ -24,7 +24,7 @@ const plugin = (args) => {
     delete props.$css;
 
     if (process.env.NODE_ENV !== 'production') {
-        if (typeof $attr !== 'object') {
+        if (typeof $css !== 'object') {
             console.error(
                 `JSX++ $css plugin expected $css prop to be an object, received "${typeof $css}".`
             );
@@ -39,8 +39,25 @@ const plugin = (args) => {
         const pipe = nano.pipe();
 
         pipes.set(el, pipe);
+
+        const self = {};
+        let added = false;
+
+        for (const prop in $css) {
+            const value = $css[prop];
+
+            if (typeof value !== 'object') {
+                added = true;
+                self[prop] = value;
+            }
+        }
+
+        if (added) {
+            $css['&'] = Object.assign($css['&'] || {}, self);
+        }
+
         pipe.css($css);
-        props[pope.attr] = '';
+        el.setAttribute(pipe.attr, '');
     };
 
     return args;
