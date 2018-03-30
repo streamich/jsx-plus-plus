@@ -1,6 +1,6 @@
 {
   "name": "jsx-plus-plus",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Better JSX for busy developers",
   "main": "lib/index.js",
   "scripts": {
@@ -19,6 +19,7 @@
     "url": "https://github.com/streamich/jsx-plus-plus.git"
   },
   "dependencies": {
+    "nano-css": "^1.14.0",
     "classnames": "^2.2.5",
     "react-micro-lifecycles": "^1.0.0"
   },

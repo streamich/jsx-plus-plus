@@ -4,11 +4,20 @@ Missing features for your React JSX templates.
 
 - Inline style prefixing
 - Better class name syntax
-- Dynamic CSS
+- Dynamic CSS (work-in-progress)
 - Set DOM element props
 - Set DOM element attributes
 - Add native DOM event listeners
 - Micro life-cycles
+
+
+Simply require this file:
+
+```js
+require('jsx-plus-plus/lib/patch');
+```
+
+Done!
 
 
 ## Inline Style Prefixing
