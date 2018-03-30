@@ -60,6 +60,49 @@ const plugin = (args) => {
         el.setAttribute(pipe.attr, '');
     };
 
+    props.$update = (el, props, oldProps) => {
+        if ($update) $update(el, props, oldProps);
+
+        let pipe = pipes.get(el);
+
+        if (!pipe) {
+            pipe = nano.pipe();
+            pipes.set(el, pipe);
+            el.setAttribute(pipe.attr, '');
+        }
+
+        const self = {};
+        let added = false;
+
+        for (const prop in $css) {
+            const value = $css[prop];
+
+            if (typeof value !== 'object') {
+                added = true;
+                self[prop] = value;
+            }
+        }
+
+        if (added) {
+            $css['&'] = Object.assign($css['&'] || {}, self);
+        }
+
+        pipe.css($css);
+    };
+
+    props.$detach = (el, oldProps) => {
+        if ($detach) $detach(el, oldProps);
+
+        const pipe = pipes.get(el);
+
+        pipes.delete(el);
+
+        if (pipe) {
+            el.removeAttribute(pipe.attr);
+            pipe.remove();
+        }
+    };
+
     return args;
 };
 
