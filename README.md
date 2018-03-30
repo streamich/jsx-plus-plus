@@ -14,7 +14,7 @@ Missing features for your React JSX templates.
 Simply require this file:
 
 ```js
-require('jsx-plus-plus/lib/patch');
+require('jsx-plus-plus');
 ```
 
 Done!
