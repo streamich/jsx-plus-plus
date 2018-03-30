@@ -8,6 +8,7 @@ Missing features for your React JSX templates.
 - Set DOM element props
 - Set DOM element attributes
 - Add native DOM event listeners
+- Micro life-cycles
 
 
 ## Inline Style Prefixing
@@ -70,3 +71,24 @@ Result:
 <div aria-hidden=""></div>
 ```
 
+
+## Add Native DOM Events
+
+Catch native DOM events.
+
+```jsx
+<button $on={{click: () => console.log('CLICKED')}}>Click me!</button>
+```
+
+
+## Micro Life-cycles
+
+Add micro life-cycles for DOM elements.
+
+```jsx
+<div
+  $attach={(el, props) => console.log('element attached: ', el, props)}
+  $update={(el, props, oldProps) => console.log('element updated: ', el, props, oldProps)}
+  $detach={(el, oldProps) => console.log('element detached: ', el, oldProps)}
+/>
+```

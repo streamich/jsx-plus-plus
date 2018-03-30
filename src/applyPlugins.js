@@ -1,4 +1,4 @@
-const createHyperscript = (h, plugins) => {
+const applyPlugins = (h, plugins) => {
     return (...args) => {
         const type = args[0];
         const props = args[1];
@@ -12,4 +12,4 @@ const createHyperscript = (h, plugins) => {
     };
 };
 
-export default createHyperscript;
+export default applyPlugins;
