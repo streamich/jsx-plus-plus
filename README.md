@@ -7,7 +7,7 @@ Missing features for your React JSX templates.
 - Dynamic CSS &mdash; [*demo!*](https://codesandbox.io/s/ryoy53q4mn)
 - Set DOM element props
 - Set DOM element attributes
-- Add native DOM event listeners
+- Add native DOM event listeners &mdash; [*demo!*](https://codesandbox.io/s/2wlvo21yp0)
 - Micro life-cycles
 
 
