@@ -4,14 +4,14 @@ Missing features for your React JSX templates.
 
 - Inline style prefixing
 - Better class name syntax
-- Dynamic CSS
+- Dynamic CSS &mdash; [*demo!*](https://codesandbox.io/s/ryoy53q4mn)
 - Set DOM element props
 - Set DOM element attributes
 - Add native DOM event listeners
 - Micro life-cycles
 
 
-Simply require this file:
+Usage:
 
 ```js
 require('jsx-plus-plus');
