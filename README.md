@@ -4,7 +4,7 @@ Missing features for your React JSX templates.
 
 - Inline style prefixing
 - Better class name syntax
-- Dynamic CSS (work-in-progress)
+- Dynamic CSS
 - Set DOM element props
 - Set DOM element attributes
 - Add native DOM event listeners
@@ -50,6 +50,35 @@ Result:
 ```html
 <div class="bar 1">
 <div class="a">
+```
+
+
+## Dynamic CSS
+
+JSX++ will dynamically generate scoped CSS for your nodes.
+
+```jsx
+<div $css={{
+    color: 'red', 
+    '&:hover': {
+        color: 'blue'
+    }
+}}>Hover me!</div>
+```
+
+Result:
+
+```css
+[data-css-123] {
+    color: red;
+}
+[data-css-123]:hover {
+    color: blue;
+}
+```
+
+```html
+<div data-css-123>Hover me!</div>
 ```
 
 
