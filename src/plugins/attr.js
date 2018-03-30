@@ -7,6 +7,8 @@ const plugin = (args) => {
 
     if (!$attr) return args;
 
+    delete props.$attr;
+
     if (process.env.NODE_ENV !== 'production') {
         if (typeof $attr !== 'object') {
             console.error(

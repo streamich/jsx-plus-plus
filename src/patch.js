@@ -5,6 +5,7 @@ import classnames from './plugins/classnames';
 import dom from './plugins/dom';
 import attr from './plugins/attr';
 import prefixer from './plugins/prefixer';
+import css from './plugins/css';
 import on from './plugins/on';
 
 const plugins = [
@@ -12,6 +13,7 @@ const plugins = [
     classnames,
     dom,
     attr,
+    css,
     on,
 ];
 

@@ -2,7 +2,7 @@
   "name": "jsx-plus-plus",
   "version": "0.1.0",
   "description": "Better JSX for busy developers",
-  "main": "lib/index.js",
+  "main": "lib/patch.js",
   "scripts": {
     "start": "npm run storybook",
     "clean": "rimraf lib",
@@ -19,7 +19,7 @@
     "url": "https://github.com/streamich/jsx-plus-plus.git"
   },
   "dependencies": {
-    "nano-css": "^1.14.0",
+    "nano-css": "^1.15.0",
     "classnames": "^2.2.5",
     "react-micro-lifecycles": "^1.0.0"
   },

@@ -11,6 +11,8 @@ const plugin = (args) => {
 
     if (!$on) return args;
 
+    delete props.$on;
+
     if (process.env.NODE_ENV !== 'production') {
         if (typeof $on !== 'object') {
             console.error(
