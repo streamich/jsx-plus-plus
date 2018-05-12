@@ -24,27 +24,27 @@
     "react-micro-lifecycles": "^1.0.0"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^3.3.15",
-    "@storybook/addon-links": "^3.3.15",
-    "@storybook/addons": "^3.3.15",
-    "@storybook/react": "^3.3.15",
+    "@storybook/addon-actions": "3.4.4",
+    "@storybook/addon-links": "3.4.4",
+    "@storybook/addons": "3.4.4",
+    "@storybook/react": "3.4.4",
     "babel-cli": "6.26.0",
-    "babel-core": "^6.26.0",
+    "babel-core": "6.26.3",
     "babel-polyfill": "6.26.0",
     "babel-preset-es2015": "6.24.1",
     "babel-preset-es2016": "6.24.1",
     "babel-preset-es2017": "6.24.1",
     "babel-preset-flow": "6.23.0",
     "babel-preset-stage-0": "6.24.1",
-    "jest": "^22.4.3",
-    "jest-tap-reporter": "^1.9.0",
+    "jest": "22.4.3",
+    "jest-tap-reporter": "1.9.0",
     "prettier": "1.11.1",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "rimraf": "^2.6.2",
+    "react": "16.3.2",
+    "react-dom": "16.3.2",
+    "rimraf": "2.6.2",
     "lint-staged": "4.3.0",
     "mol-conventional-changelog": "1.2.0",
-    "nano-css": "^1.14.0"
+    "nano-css": "1.17.2"
   },
   "lint-staged": {
     "**/*.js": [
