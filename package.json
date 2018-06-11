@@ -42,7 +42,7 @@
     "react": "16.4.1",
     "react-dom": "16.4.1",
     "rimraf": "2.6.2",
-    "lint-staged": "4.3.0",
+    "lint-staged": "7.2.0",
     "mol-conventional-changelog": "1.4.0",
     "nano-css": "1.17.2"
   },
