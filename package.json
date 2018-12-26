@@ -19,7 +19,7 @@
     "url": "https://github.com/streamich/jsx-plus-plus.git"
   },
   "dependencies": {
-    "nano-css": "^2.0.0",
+    "nano-css": "^3.0.0",
     "classnames": "^2.2.5",
     "react-micro-lifecycles": "^1.0.0"
   },
@@ -44,7 +44,7 @@
     "rimraf": "2.6.2",
     "lint-staged": "7.3.0",
     "mol-conventional-changelog": "1.4.0",
-    "nano-css": "2.2.0"
+    "nano-css": "3.5.0"
   },
   "lint-staged": {
     "**/*.js": [
