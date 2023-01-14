@@ -41,7 +41,7 @@
     "prettier": "2.8.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "rimraf": "4.0.4",
+    "rimraf": "4.0.5",
     "lint-staged": "13.1.0",
     "mol-conventional-changelog": "1.4.3",
     "nano-css": "2.2.0"
