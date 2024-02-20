@@ -24,10 +24,10 @@
     "react-micro-lifecycles": "^1.0.0"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "7.6.16",
-    "@storybook/addon-links": "7.6.16",
-    "@storybook/addons": "7.6.16",
-    "@storybook/react": "7.6.16",
+    "@storybook/addon-actions": "7.6.17",
+    "@storybook/addon-links": "7.6.17",
+    "@storybook/addons": "7.6.17",
+    "@storybook/react": "7.6.17",
     "babel-cli": "6.26.0",
     "babel-core": "6.26.3",
     "babel-polyfill": "6.26.0",
